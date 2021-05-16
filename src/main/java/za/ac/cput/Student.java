@@ -147,4 +147,44 @@ public class Student
 
         return names.contains("Doe");
     }
+
+    public static List<String> arrayListAdd()
+    {
+        List<String> list=new ArrayList<>();
+        Student s1=new Student("John");
+        Student s2=new Student("Doe");
+        Student s3=new Student("Mary");
+        list.add(s1.student);
+        list.add(s2.student);
+        list.add(s3.student);
+        return list;
+    }
+
+    public static List<String> arrayListRemove()
+    {
+        List<String> list=new ArrayList<>();
+        Student s1=new Student("John");
+        Student s2=new Student("Doe");
+        Student s3=new Student("Mary");
+        list.add(s1.student);
+        list.add(s2.student);
+        list.add(s3.student);
+
+        list.remove(1);
+
+        return list;
+    }
+
+    public static boolean arrayListFind()
+    {
+        List<String> list=new ArrayList<>();
+        Student s1=new Student("John");
+        Student s2=new Student("Doe");
+        Student s3=new Student("Mary");
+        list.add(s1.student);
+        list.add(s2.student);
+        list.add(s3.student);
+
+        return list.contains("John");
+    }
 }
