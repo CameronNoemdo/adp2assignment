@@ -1,5 +1,7 @@
 package za.ac.cput;
 
+import java.util.*;
+
 public class Student
 {
     public String student;
