@@ -64,4 +64,24 @@ public class StudentTest
     {
         assertTrue(Student.hashsetFind(),"Failed to find student in the set.");
     }
+
+    @Test
+    void testListAdd()
+    {
+        String[] testStudents={"John","Doe","Mary"};
+        assertArrayEquals(testStudents, Student.arrayListAdd().toArray(), "Failed to add student(s) to the list.");
+    }
+
+    @Test
+    void testListRemove()
+    {
+        String[] testStudents={"John","Mary"};
+        assertArrayEquals(testStudents, Student.arrayListRemove().toArray(), "Failed to remove student(s) from list.");
+    }
+
+    @Test
+    void testListFind()
+    {
+        assertTrue(Student.arrayListFind(), "Failed to find student in the list.");
+    }
 }
