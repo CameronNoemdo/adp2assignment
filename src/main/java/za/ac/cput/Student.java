@@ -104,4 +104,47 @@ public class Student
 
         return students.containsValue("Mary");
     }
+
+    public static Set<String> hashsetAdd()
+    {
+        Set<String> names=new HashSet();
+        Student s1=new Student("John");
+        Student s2=new Student("Doe");
+        Student s3=new Student("Mary");
+        Student s4=new Student("Doe");
+        names.add(s1.student);
+        names.add(s2.student);
+        names.add(s3.student);
+        names.add(s4.student);
+
+        return names;
+    }
+
+    public static Set<String> hashsetRemove()
+    {
+        Set<String> names=new HashSet();
+        Student s1=new Student("John");
+        Student s2=new Student("Doe");
+        Student s3=new Student("Mary");
+        names.add(s1.student);
+        names.add(s2.student);
+        names.add(s3.student);
+
+        names.remove("John");
+
+        return names;
+    }
+
+    public static boolean hashsetFind()
+    {
+        Set<String> names=new HashSet();
+        Student s1=new Student("John");
+        Student s2=new Student("Doe");
+        Student s3=new Student("Mary");
+        names.add(s1.student);
+        names.add(s2.student);
+        names.add(s3.student);
+
+        return names.contains("Doe");
+    }
 }
