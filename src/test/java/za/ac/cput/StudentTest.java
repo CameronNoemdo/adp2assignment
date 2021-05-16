@@ -44,4 +44,24 @@ public class StudentTest
     {
         assertTrue(Student.hashmapFind(),"Failed to find student in map.");
     }
+
+    @Test
+    void testSetAdd()
+    {
+        int setSize=Student.hashsetAdd().size();
+        assertEquals(3, setSize,"Failed to add student(s) to set.");
+    }
+
+    @Test
+    void testSetRemove()
+    {
+        int setSize=Student.hashsetRemove().size();
+        assertEquals(2, setSize,"Failed to remove student(s) from set.");
+    }
+
+    @Test
+    void testSetFind()
+    {
+        assertTrue(Student.hashsetFind(),"Failed to find student in the set.");
+    }
 }
