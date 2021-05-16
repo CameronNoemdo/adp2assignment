@@ -24,4 +24,24 @@ public class StudentTest
     {
         assertTrue(Student.collectionFind(),"Failed to find student in collection.");
     }
+
+    @Test
+    void testHashmapAdd()
+    {
+        int mapSize=Student.hashmapAdd().size();
+        assertEquals(3,mapSize,"Failed to add student(s) to the map");
+    }
+
+    @Test
+    void testHashmapRemove()
+    {
+        int mapSize=Student.hashmapRemove().size();
+        assertEquals(2,mapSize,"Failed to remove student from map.");
+    }
+
+    @Test
+    void testHashmapFind()
+    {
+        assertTrue(Student.hashmapFind(),"Failed to find student in map.");
+    }
 }
