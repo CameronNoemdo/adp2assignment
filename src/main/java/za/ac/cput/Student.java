@@ -55,4 +55,53 @@ public class Student
 
         return studentNames.contains("John");
     }
+
+    public static Map<Integer, String> hashmapAdd()
+    {
+        Map<Integer, String> students=new TreeMap<>();
+        Student s1=new Student("John");
+        Student s2=new Student("Doe");
+        Student s3=new Student("Mary");
+        int s1Number=217;
+        int s2Number=218;
+        int s3Number=219;
+        students.put(s1Number,s1.student);
+        students.put(s2Number,s2.student);
+        students.put(s3Number,s3.student);
+
+        return students;
+    }
+
+    public static Map<Integer, String> hashmapRemove()
+    {
+        Map<Integer, String> students=new TreeMap<>();
+        Student s1=new Student("John");
+        Student s2=new Student("Doe");
+        Student s3=new Student("Mary");
+        int s1Number=217;
+        int s2Number=218;
+        int s3Number=219;
+        students.put(s1Number,s1.student);
+        students.put(s2Number,s2.student);
+        students.put(s3Number,s3.student);
+        students.remove(217);
+
+        return students;
+    }
+
+    public static boolean hashmapFind()
+    {
+        Map<Integer, String> students=new TreeMap<>();
+        int s1Number=217;
+        int s2Number=218;
+        int s3Number=219;
+        Student s1=new Student("John");
+        Student s2=new Student("Doe");
+        Student s3=new Student("Mary");
+        students.put(s1Number,s1.student);
+        students.put(s2Number,s2.student);
+        students.put(s3Number,s3.student);
+
+        return students.containsValue("Mary");
+    }
 }
