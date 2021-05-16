@@ -2,6 +2,10 @@ package za.ac.cput;
 
 import java.util.*;
 
+/** Student name: Cameron Noemdo
+ * Student number: 219115443
+ */
+
 public class Student
 {
     public String student;
